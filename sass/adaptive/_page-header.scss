@@ -21,9 +21,12 @@
   border-bottom-color: #ececec;
 }
 .navigation {
+  width: 100%;
   display: flex;
   align-items: center;
   padding-left: 0;
+  justify-content: space-between;
+
 }
 
 .nav-list {
@@ -35,8 +38,6 @@
 .nav-list__item:not(:last-child) {
   margin-right: 50px;
 }
-
-
 
 .list-contact .list-contact__item + .list-contact__item {
   margin-left: 50px;
@@ -86,11 +87,24 @@
 }
 }
 
-
-
 .list-contact__icon-mail,
 .list-contact__icon-tel {
   display: flex;
   margin-right: 10px;
   fill: currentColor;
 }
+
+// adaptive
+
+.toggle{
+  border: none;
+  background-color: white;
+}
+
+
+@media screen and  (max-width: 767px){
+  .display {
+    display: none;
+  }
+}
+
