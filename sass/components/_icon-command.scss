@@ -1,0 +1,33 @@
+.command-icon-list{
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  padding: 0px 30px 30px 32px;
+}
+
+.command-icon-list__link {
+  background-color: #ffffff;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #afb1b8;
+  transition: color var(--transition-duration-timing-function),
+    background-color var(--transition-duration-timing-function);
+&:hover,
+&:focus {
+  background-color: #2196f3;
+  color: #ffffff;
+}
+  }
+
+.command-icon-list__svg {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+}
+.command-icon-list__item:not(:last-child) {
+  margin-right: 10px;
+}

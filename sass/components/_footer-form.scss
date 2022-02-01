@@ -1,0 +1,98 @@
+.form {
+  padding-top: 8px;
+}
+
+.subscription-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.subscription__field {
+  position: relative;
+  margin-right: 12px;
+}
+
+.subscription__label-mailing {
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  padding-left: 16px;
+  font-size: 16px;
+  line-height: 1.25;
+  color: rgba(255, 255, 255, 0.6);
+  transition: transform var(--transition-duration-timing-function);
+  .subscription__input:focus + &,
+  .subscription__input:not(:placeholder-shown) + & {
+  transform: translate(-68px, -50%);
+}
+}
+
+
+
+.subscription__input {
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  background-color: inherit;
+  width: 358px;
+  height: 50px;
+  transition: background-color var(--transition-duration-timing-function);
+.subscription__field:focus + &,
+&:not(:placeholder-shown) {
+  background-color: #ffffff;
+}
+}
+
+.subscription-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 50px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  background: #2196f3;
+  color: #ffffff;
+  cursor: pointer;
+  transition: background-color var(--transition-duration-timing-function),
+  color var(--transition-duration-timing-function),
+  background var(--transition-duration-timing-function),
+  box-shadow var(--transition-duration-timing-function);
+  border: 0;
+  padding: 0;
+  &:hover {
+  color: #212121;
+  background: #ffffff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  fill: #212121;
+}
+}
+
+.subscription-icon {
+  margin-left: 10px;
+  fill: #ffffff;
+  transition: fill var(--transition-duration-timing-function);
+  .subscription-button:hover > & {
+  fill: #212121;
+}
+}
+.form__text {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+
+

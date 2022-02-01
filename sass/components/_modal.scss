@@ -1,0 +1,223 @@
+.backdrop.is-hidden {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.backdrop {
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  opacity: 1;
+  transition: opacity var(--transition-duration-timing-function);
+}
+
+.backdrop.is-hidden .modal {
+  transform: translate(-50%, -50%) scale(1.1);
+  visibility: hidden;
+}
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  max-width: 528px;
+  max-height: 581px;
+  transform: translate(-50%, -50%) scale(1);
+  transition: transform var(--transition-duration-timing-function),
+  visibility var(--transition-duration-timing-function);
+  background-color: #ffffff;
+  padding: 40px;
+  visibility: visible;
+}
+
+.modal-button__svg-close {
+  fill: black;
+  transition: fill var(--transition-duration-timing-function);
+.modal-button:hover > & {
+  fill: #2196f3;
+}
+}
+
+.modal__modal-button {
+position: absolute;
+}
+
+.modal-button {
+  top: 8px;
+  right: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  padding: 0;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  background: #ffffff;
+  z-index: 1;
+}
+
+// modal form 
+
+.modal-form {
+  width: 100%;
+  height: 100%;
+}
+
+.field-position {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.field-position label {
+  display: block;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+  color: #757575;
+
+}
+
+.form-feild {
+  position: relative;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+.modal-form-text {
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  font-weight: bold;
+  letter-spacing: 0.03em;
+  color: #212121;
+  margin-bottom: 12px;
+}
+
+.form-feild__input {
+  display: inline-block;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  box-sizing: border-box;
+  border-radius: 4px;
+  width: 100%;
+  height: 40px;
+  padding: 0 0 0 42px;
+  transition: border var(--transition-duration-timing-function);
+  margin-top: 4px;
+  &:focus {
+  outline: none;
+  border: 1px solid #2196f3;
+}
+}
+
+.form-feild__icon {
+  position: absolute;
+  left: 12px;
+  bottom: 11px;
+  transition: fill var(--transition-duration-timing-function);
+.form-feild__input:focus + & {
+  fill: #2196f3;
+}
+}
+
+.comment-feild__text {
+  display: inline-block;
+  resize: none;
+  width: 100%;
+  height: 120px;
+  overflow: auto;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  box-sizing: border-box;
+  border-radius: 4px;
+  padding: 12px 16px;
+  transition: border var(--transition-duration-timing-function);
+  margin-top: 4px;
+  &:focus {
+  outline: none;
+  border: 1px solid #2196f3;
+}
+}
+.agreement-field__checkbox-link {
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.03em;
+  text-decoration-line: underline;
+  color: #2196f3;
+  margin-left: 2px;
+}
+
+.form-button-modal {
+  width: 200px;
+  height: 50px;
+  background: #2196f3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border: 0;
+  border-radius: 4px;
+  font-size: 16px;
+  line-height: 0.53;
+  letter-spacing: 0.06em;
+  color: #ffffff;
+  padding: 10px 55px;
+}
+.position-form-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
+.agreement-field__label {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.03em;
+  color: #757575;
+}
+
+.icon-checkbox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 16px;
+  height: 15px;
+  border-radius: 2px;
+  padding: 0;
+  margin-right: 7px;
+  fill: #ffffff;
+  background-color: #ffffff;
+  border: 2px solid #212121;
+}
+
+.agreement-field__checkbox:checked + .icon-checkbox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 16px;
+  height: 15px;
+  border-radius: 2px;
+  padding: 0;
+  margin-right: 7px;
+  fill: #ffffff;
+  background-color: #2196f3;
+  border: 0;
+}
+
+
+
