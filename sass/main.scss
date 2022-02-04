@@ -1,7 +1,7 @@
 @import "./utils/variables";
 @import "./base/reset";
 @import "./base/common";
-@import "./utils/breakpoints";
+@import "./utils/mixins";
 
 // COMPONENTS
 
@@ -25,3 +25,4 @@
 @import "./adaptive/page-header";
 @import "./adaptive/logo";
 @import "./adaptive/menu-container";
+@import "./adaptive/hero";

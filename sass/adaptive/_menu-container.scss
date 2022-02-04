@@ -8,8 +8,12 @@
   background-color: white;
   padding: 48px 40px;
   z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   transform: translateX(100%);
   transition: transform 250ms ease-in-out;
+
 }
 
 .is-open {
@@ -21,12 +25,16 @@ position: absolute;
 right:15px;
 top: 10px;
 }
+
 .menu-list__link {
 font-weight: 500;
 font-size: 40px;
 line-height: 1.17;
 letter-spacing: 0.02em;
 color: #212121;
+&:hover {
+color:#2196F3;
+}
 }
 
 .menu-list__item:not(:last-child),
@@ -35,16 +43,19 @@ color: #212121;
 }
 
 .menu-container__menu-list {
-    margin-bottom: 302px;
+    margin-bottom: 32px;
 }
 
 .menu-contact__tel {
 font-weight: 500;
 font-size: 34px;
-line-height: 40px;
+line-height: (40px / 34px);
 letter-spacing: 0.02em;
 color: #2196F3;
 width: 100%;
+@media screen and (max-width: 442px){
+font-size: 22px;
+}
 }
 
 .menu-contact__mailto{
@@ -65,12 +76,16 @@ font-size: 18px;
 line-height: 22px;
 letter-spacing: 0.02em;
 color: #2196F3;
+
 }
 
 .menu-social {
  display: flex;
  text-align: center;
  justify-content: start;
+ @media screen and (max-width: 442px) {
+flex-wrap: wrap;
+ }
 }
 
 .menu-social__item:not(:last-child)::after{
@@ -88,3 +103,12 @@ margin: 0 10px;
 .toggle__icon-menu:hover {
  fill: #2196F3;
 }
+
+.toggle{
+  border: none;
+  background-color: white;
+  @include tab {
+display: none;
+}
+}
+
