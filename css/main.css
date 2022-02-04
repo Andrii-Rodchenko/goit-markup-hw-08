@@ -469,12 +469,12 @@ a {
 }
 
 .section-hero {
-  padding-top: 205px;
-  padding-bottom: 200px;
+  padding-top: 118px;
+  padding-bottom: 118px;
   margin-left: auto;
   margin-right: auto;
-  min-height: 600px;
-  max-width: 1600px;
+  max-height: 400px;
+  max-width: 480px;
   background-color: var(--hero-background-color);
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(/images/heder-img/header-img-tel@1-min.jpg);
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/heder-img/header-img-tel@1-min.jpg);
@@ -494,6 +494,8 @@ a {
   .section-hero {
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(/images/heder-img/header-img-tab@1-min.jpg);
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/heder-img/header-img-tab@1-min.jpg);
+    max-height: 400px;
+    max-width: 768px;
   }
 }
 
@@ -508,6 +510,10 @@ a {
   .section-hero {
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(/images/heder-img/header-img-desk@1-min.png);
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/heder-img/header-img-desk@1-min.png);
+    min-height: 600px;
+    max-width: 1200px;
+    padding-top: 200px;
+    padding-bottom: 200px;
   }
 }
 
@@ -550,5 +556,78 @@ a {
 
 .section-hero__button-hero {
   margin-top: 25px;
+}
+
+.benefits {
+  padding-left: 0;
+}
+
+@media screen and (min-width: 1200px) {
+  .benefits {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding-left: 0;
+  }
+}
+
+.benefits__title {
+  margin-bottom: 10px;
+}
+
+.benefits__item {
+  list-style-type: none;
+}
+
+.benefits__item::before {
+  display: block;
+  content: '';
+  height: 120px;
+  background-position: center;
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-color: #f5f4fa;
+  border-radius: 4px;
+  margin-bottom: 30px;
+}
+
+@media screen and (min-width: 1200px) {
+  .benefits__title:not(:last-child) {
+    margin-right: 30px;
+    width: 270px;
+  }
+}
+
+.benefits__title {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--title-text-color);
+}
+
+.benefits__text {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--paragraph-text-color);
+}
+
+.benefits-item-antenna::before {
+  background-image: url(../images/antenna.svg);
+}
+
+.benefits-item-clock::before {
+  background-image: url(../images/clock.svg);
+}
+
+.benefits-item-diagram::before {
+  background-image: url(../images/diagram.svg);
+}
+
+.benefits-item-astronaut::before {
+  background-image: url(../images/astronaut.svg);
 }
 /*# sourceMappingURL=main.css.map */

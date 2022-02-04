@@ -1,15 +1,16 @@
 .benefits {
+  padding-left: 0;
+  
+  @include desk {
   display: flex;
   padding-left: 0;
+  }
 }
 .benefits__title {
   margin-bottom: 10px;
 }
 
-
-
 .benefits__item {
-  width: 270px;
   list-style-type: none;
   &::before {
   display: block;
@@ -22,10 +23,15 @@
   border-radius: 4px;
   margin-bottom: 30px;
 }
-&:not(:last-child) {
+}
+
+@media screen and (min-width: 1200px) {
+ .benefits__title:not(:last-child) {
   margin-right: 30px;
+  width: 270px;
+} 
 }
-}
+
 
 .benefits__title {
   font-weight: bold;
