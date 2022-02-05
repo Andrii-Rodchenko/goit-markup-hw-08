@@ -3,9 +3,21 @@
 }
 
 .command-list {
+  @include tab {
   display: flex;
+  flex-wrap: wrap;
+  margin-right: -30px;
+  margin-bottom: -30px;
   padding-left: 0;
+  }
+  @include desk{
+  display: flex;
+  flex-wrap: nowrap;
+  padding-left: 0;
+  }
+
 }
+
 .command__title {
   margin-bottom: 50px;
 }
@@ -15,8 +27,15 @@
   border-radius: 0px 0px 4px 4px;
   list-style: none;
   background-color: #ffffff;
-  &:not(:last-child) {
+@include tab {
+width: calc(100% / 2 - 30px);
+margin-right: 30px;
+margin-bottom: 30px;
+}
+@include desk {
+.command-list__card:not(:last-child) {
   margin-right: 30px;
+}
 }
 }
 

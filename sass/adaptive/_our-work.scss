@@ -1,3 +1,9 @@
+.our-work {
+  @media screen and (max-width: 1200px) {
+  display: none;
+}
+}
+
 .our-work-list__item {
   position: relative;
 }
