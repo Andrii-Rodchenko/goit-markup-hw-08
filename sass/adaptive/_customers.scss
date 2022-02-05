@@ -8,10 +8,29 @@
 }
 
 .list-logos {
+display: flex;
+flex-wrap: wrap;
+list-style: none;
+justify-content: center;
+padding: 0;
+margin-right: -30px;
+margin-bottom: -30px;
+
+  @include tab {
+display: flex;
+flex-wrap: wrap;
+list-style: none;
+justify-content: center;
+padding: 0;
+  }
+@include desk {
   display: flex;
   list-style: none;
   justify-content: center;
+  flex-wrap: nowrap;
   padding: 0;
+}
+
 }
 .list-logos__link {
   border: 1px solid #afb1b8;
@@ -28,11 +47,21 @@
   color: #2196f3;
   border: 1px solid #2196f3;
 }
+}
 
-}
-.list-logos__item:not(:last-child) {
+.list-logos__item {
   margin-right: 30px;
+  margin-bottom: 30px;
+  width: calc(100% / 2 - 30px);
+  @include tab{
+width: calc(100% / 3 - 30px);
+@include desk {
+.list-logos__item:not(:last-child) {
+  margin-right: 30px; }
+  }
+  }
 }
+
 .list-logos__icon {
   fill: currentColor
 }

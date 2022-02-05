@@ -1,9 +1,33 @@
 .list-btn {
   display: flex;
+  justify-content:flex-start;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+  margin-top: -15px;
+  padding-left: 0;
+  
+  @include tab {
+  display: flex;
   justify-content: center;
   margin-bottom: 50px;
   padding-left: 0;
+  }
+
+  @include desk {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+  padding-left: 0;
+  }
 }
+.list-btn__item {
+  &:not(:last-child) {
+  margin-right: 8px;
+}
+margin-top: 15px;
+}
+
+
 .list-btn__item:not(:last-child) {
   margin-right: 8px;
 }

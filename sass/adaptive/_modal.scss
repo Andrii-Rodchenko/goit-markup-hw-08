@@ -13,6 +13,7 @@
   background-color: rgba(0, 0, 0, 0.2);
   opacity: 1;
   transition: opacity var(--transition-duration-timing-function);
+overflow-y: scroll;
 }
 
 .backdrop.is-hidden .modal {
@@ -21,17 +22,27 @@
 }
 .modal {
   position: absolute;
+  width: 95vw;
   top: 50%;
   left: 50%;
-  max-width: 528px;
-  max-height: 581px;
+  max-width: 450px;
+  max-height: 609px;
   transform: translate(-50%, -50%) scale(1);
   transition: transform var(--transition-duration-timing-function),
   visibility var(--transition-duration-timing-function);
   background-color: #ffffff;
   padding: 40px;
   visibility: visible;
+  @include tab {
+    width: 450px;
+  }
+  @include desk {
+  width: 528px;
+  max-width: 528px;
+  max-height: 581px;
+  }
 }
+
 
 .modal-button__svg-close {
   fill: black;
@@ -91,12 +102,16 @@ position: absolute;
 
 .modal-form-text {
   font-size: 20px;
-  line-height: 1.15;
+  line-height: 1.5;
   text-align: center;
   font-weight: bold;
   letter-spacing: 0.03em;
   color: #212121;
   margin-bottom: 12px;
+  @include desk {
+      font-size: 20px;
+  line-height: 1.15;
+  }
 }
 
 .form-feild__input {
@@ -149,6 +164,10 @@ position: absolute;
   text-decoration-line: underline;
   color: #2196f3;
   margin-left: 2px;
+  @include desk {
+   font-size: 14px;
+  line-height: 1.71; 
+  }
 }
 
 .form-button-modal {
@@ -164,7 +183,7 @@ position: absolute;
   color: #ffffff;
   padding: 10px 55px;
 }
-.position-form-button {
+.form-button-box {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -189,6 +208,11 @@ position: absolute;
   line-height: 1.16;
   letter-spacing: 0.03em;
   color: #757575;
+  width: 100%;
+  @include desk {
+   font-size: 14px;
+  line-height: 1.71; 
+  }
 }
 
 .icon-checkbox {
@@ -219,5 +243,12 @@ position: absolute;
   border: 0;
 }
 
+.checkbox-label__text {
+  display: flex;
+  justify-content:space-between;
+  @media screen  and ( max-width: 468px) {
+flex-wrap: wrap;
+  }
 
+}
 

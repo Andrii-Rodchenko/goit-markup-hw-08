@@ -183,24 +183,24 @@
             <picture>
               <source
                 srcset="
-                  ./images/command-img/command-1-tel-@1-min.jpg 1x,
-                  ./images/command-img/command-1-tel-@2-min.jpg 2x
+                  ./images/command-img/command-1-desk-@1-min.jpg 1x,
+                  ./images/command-img/command-1-desk-@2-min.jpg 2x
                 "
-                media="(min-width: 320px)"
+                media="(min-width: 1200px)"
               />
               <source
                 srcset="
                   ./images/command-img/command-1-tab-@1-min.jpg 1x,
                   ./images/command-img/command-1-tab-@2-min.jpg 2x
                 "
-                media="(min-width: 768px)"
+                media="(max-width: 768px)"
               />
               <source
                 srcset="
-                  ./images/command-img/command-1-desk-@1-min.jpg 1x,
-                  ./images/command-img/command-1-desk-@2-min.jpg 2x
+                  ./images/command-img/command-1-tel-@1-min.jpg 1x,
+                  ./images/command-img/command-1-tel-@2-min.jpg 2x
                 "
-                media="(min-width: 1200px)"
+                media="(min-width: 320px)"
               />
               <img
                 src="./images/command-img/command-1-tel-@1-min.jpg"
@@ -247,10 +247,10 @@
             <picture>
               <source
                 srcset="
-                  ./images/command-img/command-2-tel-@1-min.jpg 1x,
-                  ./images/command-img/command-2-tel-@2-min.jpg 2x
+                  ./images/command-img/command-2-desk-@1-min.jpg 1x,
+                  ./images/command-img/command-2-desk-@2-min.jpg 2x
                 "
-                media="(min-width: 320px)"
+                media="(min-width: 1200px)"
               />
               <source
                 srcset="
@@ -261,11 +261,12 @@
               />
               <source
                 srcset="
-                  ./images/command-img/command-2-desk-@1-min.jpg 1x,
-                  ./images/command-img/command-2-desk-@2-min.jpg 2x
+                  ./images/command-img/command-2-tel-@1-min.jpg 1x,
+                  ./images/command-img/command-2-tel-@2-min.jpg 2x
                 "
-                media="(min-width: 1200px)"
+                media="(min-width: 320px)"
               />
+
               <img
                 src="./images/command-img/command-2-tel-@1-min.jpg"
                 alt="фото игорь демьяненко"
@@ -310,10 +311,10 @@
             <picture>
               <source
                 srcset="
-                  ./images/command-img/command-3-tel-@1-min.jpg 1x,
-                  ./images/command-img/command-3-tel-@2-min.jpg 2x
+                  ./images/command-img/command-3-desk-@1-min.jpg 1x,
+                  ./images/command-img/command-3-desk-@2-min.jpg 2x
                 "
-                media="(min-width: 320px)"
+                media="(min-width: 1200px)"
               />
               <source
                 srcset="
@@ -324,11 +325,12 @@
               />
               <source
                 srcset="
-                  ./images/command-img/command-3-desk-@1-min.jpg 1x,
-                  ./images/command-img/command-3-desk-@2-min.jpg 2x
+                  ./images/command-img/command-3-tel-@1-min.jpg 1x,
+                  ./images/command-img/command-3-tel-@2-min.jpg 2x
                 "
-                media="(min-width: 1200px)"
+                media="(min-width: 320px)"
               />
+
               <img
                 src="./images/command-img/command-3-tel-@1-min.jpg"
                 alt="фото игорь демьяненко"
@@ -373,10 +375,10 @@
             <picture>
               <source
                 srcset="
-                  ./images/command-img/command-4-tel-@1-min.jpg 1x,
-                  ./images/command-img/command-4-tel-@2-min.jpg 2x
+                  ./images/command-img/command-4-desk-@1-min.jpg 1x,
+                  ./images/command-img/command-4-desk-@2-min.jpg 2x
                 "
-                media="(min-width: 320px)"
+                media="(min-width: 1200px)"
               />
               <source
                 srcset="
@@ -387,11 +389,12 @@
               />
               <source
                 srcset="
-                  ./images/command-img/command-4-desk-@1-min.jpg 1x,
-                  ./images/command-img/command-4-desk-@2-min.jpg 2x
+                  ./images/command-img/command-4-tel-@1-min.jpg 1x,
+                  ./images/command-img/command-4-tel-@2-min.jpg 2x
                 "
-                media="(min-width: 1200px)"
+                media="(min-width: 320px)"
               />
+
               <img
                 src="./images/command-img/command-4-tel-@1-min.jpg"
                 alt="фото игорь демьяненко"
@@ -640,9 +643,12 @@
               <svg class="icon-checkbox" width="16px" height="15px">
                 <use class="icon-checkbox__svg" href="./images/icons.svg#icon-check"></use>
               </svg>
-              Соглашаюсь с рассылкой и принимаю
-              <a class="agreement-field__checkbox-link" href=""> Условия договора </a></label
-            >
+
+              <span class="checkbox-label__text">
+                Соглашаюсь с рассылкой и принимаю
+                <a class="agreement-field__checkbox-link" href=""> Условия договора </a>
+              </span>
+            </label>
           </div>
           <div class="form-button-box">
             <button type="submit" class="form-button-modal">Отправить</button>

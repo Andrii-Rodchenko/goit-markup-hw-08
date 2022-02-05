@@ -1,15 +1,34 @@
 .form {
+  text-align: center;
   padding-top: 8px;
-}
+  margin-top: 60px;
 
+   @include desk {
+ text-align: start;
+ margin-top: 0;
+   }
+}
 .subscription-form {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  text-align: center;
+
+  @include tab {
+width: 450px;
+  }
+  @include desk {
+display: flex;
+justify-content: center;
+align-items: center;
+  }
 }
 .subscription__field {
   position: relative;
-  margin-right: 12px;
+  width: 100%;
+  margin-right: 0;
+
+  @include desk {
+margin-right: 12px;
+width: 358px;
+  }
 }
 
 .subscription__label-mailing {
@@ -27,9 +46,10 @@
   .subscription__input:not(:placeholder-shown) + & {
   transform: translate(-68px, -50%);
 }
+@include desk {
+padding-left: 16px;
 }
-
-
+}
 
 .subscription__input {
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -37,7 +57,7 @@
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   background-color: inherit;
-  width: 358px;
+  width: 100%;
   height: 50px;
   transition: background-color var(--transition-duration-timing-function);
 .subscription__field:focus + &,
@@ -47,9 +67,6 @@
 }
 
 .subscription-button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   width: 200px;
   height: 50px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -66,6 +83,7 @@
   box-shadow var(--transition-duration-timing-function);
   border: 0;
   padding: 0;
+  margin-top: 20px;
   &:hover {
   color: #212121;
   background: #ffffff;
@@ -73,7 +91,16 @@
     0px 2px 1px rgba(0, 0, 0, 0.2);
   fill: #212121;
 }
+
+@include desk {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+   margin-top: 0;
 }
+}
+
+
 
 .subscription-icon {
   margin-left: 10px;
