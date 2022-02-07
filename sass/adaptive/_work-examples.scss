@@ -8,9 +8,16 @@ display: block;
 }
 
 .container__section-achievements {
+@include tab {
 margin-top: -30px;
 margin-left: -30px;
+  }
+    @include desk {
+margin-top: -30px;
+margin-left: -30px;
+  }
 }
+
 
 .section-achievements {
   padding-left: 0;
@@ -27,15 +34,17 @@ margin-left: -30px;
 .section-achievements > .section-achievements__descriptionte {
 list-style: none;
 margin-top: 30px;
-margin-left: 30px;
  @include tab {
+margin-top: 30px;
+margin-left: 30px;
   flex-basis: calc(100% / 2 - 30px);
   }
 @include desk {
+margin-top: 30px;
+margin-left: 30px;
   flex-basis: calc(100% / 3 - 30px);
   }
- 
-  
+
 }
 
 
@@ -43,6 +52,11 @@ margin-left: 30px;
   padding: 20px 24px;
   border: 1px solid #eeeeee;
   border-top: none;
+}
+.descriptionte {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  padding-bottom: 56px ;
+  }
 }
 
 .text-description {
@@ -66,9 +80,15 @@ margin-left: 30px;
 
 .thumb-overlay {
   position: relative;
-  max-width: 370px;
-  max-height: 294px;
+  max-width: 450px;
+  min-height: 294px;
   overflow: hidden;
+  @include tab {
+max-width: 354px;
+  }
+  @include desk {
+  max-width: 370px;
+  }
 }
 
 .thumb-overlay__text {
@@ -82,11 +102,21 @@ margin-left: 30px;
   letter-spacing: 0.03em;
   color: #ffffff;
   background-color: rgba(33, 150, 243, 0.9);
-  padding: 63px 24px;
+  padding: 77px 24px;
   transform: translateY(100%);
   transition: transform var(--transition-duration-timing-function);
 .section-achievements__link:hover & {
   transform: translateY(0);
+}
+@media screen and (max-width: 400px){ 
+  font-size: 12px;
+  padding: 50px 24px;
+}
+@include tab  {
+  padding: 49px 24px; 
+}
+@include desk {
+padding: 63px 24px;
 }
 }
 

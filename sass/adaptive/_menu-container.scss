@@ -44,6 +44,7 @@ color:#2196F3;
 
 .menu-container__menu-list {
     margin-bottom: 32px;
+    padding: 0;
 }
 
 .menu-contact__tel {
@@ -68,6 +69,7 @@ color: #757575;
 
 .menu-container__menu-contact {
     margin-bottom: 64px;
+    padding: 0;
 }
 
 .menu-social__link {
@@ -83,6 +85,7 @@ color: #2196F3;
  display: flex;
  text-align: center;
  justify-content: start;
+ padding: 0;
  @media screen and (max-width: 442px) {
 flex-wrap: wrap;
  }
