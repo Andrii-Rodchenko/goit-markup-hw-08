@@ -523,8 +523,8 @@ a {
 
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .section-hero {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/heder-img/header-img-tel@2-min.jpg);
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/heder-img/header-img-tel@2-min.jpg);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/heder-img/header-img-tab@2-min.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/heder-img/header-img-tab@2-min.jpg);
   }
 }
 
@@ -1431,7 +1431,6 @@ a {
   top: 50%;
   left: 50%;
   max-width: 450px;
-  max-height: 609px;
   -webkit-transform: translate(-50%, -50%) scale(1);
           transform: translate(-50%, -50%) scale(1);
   -webkit-transition: visibility var(--transition-duration-timing-function), -webkit-transform var(--transition-duration-timing-function);
@@ -1803,6 +1802,12 @@ a {
   border-top: none;
 }
 
+@media screen and (min-width: 1200px) {
+  .padding {
+    padding: 20px 20px;
+  }
+}
+
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .descriptionte {
     padding-bottom: 56px;
@@ -1828,21 +1833,7 @@ a {
 
 .thumb-overlay {
   position: relative;
-  max-width: 450px;
-  min-height: 294px;
   overflow: hidden;
-}
-
-@media screen and (min-width: 768px) {
-  .thumb-overlay {
-    max-width: 354px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .thumb-overlay {
-    max-width: 370px;
-  }
 }
 
 .thumb-overlay__text {

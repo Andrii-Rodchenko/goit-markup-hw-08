@@ -53,6 +53,12 @@ margin-left: 30px;
   border: 1px solid #eeeeee;
   border-top: none;
 }
+
+@include desk {
+  .padding {
+  padding: 20px 20px;
+} }
+
 .descriptionte {
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   padding-bottom: 56px ;
@@ -80,15 +86,7 @@ margin-left: 30px;
 
 .thumb-overlay {
   position: relative;
-  max-width: 450px;
-  min-height: 294px;
   overflow: hidden;
-  @include tab {
-max-width: 354px;
-  }
-  @include desk {
-  max-width: 370px;
-  }
 }
 
 .thumb-overlay__text {
