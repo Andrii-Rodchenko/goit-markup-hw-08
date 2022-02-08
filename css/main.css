@@ -1680,8 +1680,8 @@ a {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 16px;
-  height: 15px;
+  min-width: 16px;
+  min-height: 15px;
   border-radius: 2px;
   padding: 0;
   margin-right: 7px;
