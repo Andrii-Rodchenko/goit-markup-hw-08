@@ -904,38 +904,72 @@ a {
       -ms-flex-pack: center;
           justify-content: center;
   padding: 0;
-  margin-right: -30px;
   margin-bottom: -30px;
 }
 
 @media screen and (min-width: 768px) {
   .list-logos {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    list-style: none;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    padding: 0;
+    margin-right: -30px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .list-logos {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    list-style: none;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
-    padding: 0;
   }
+}
+
+.list-logos__item:nth-child(2n+1) {
+  margin-right: 30px;
+}
+
+.list-logos__item {
+  margin-bottom: 30px;
+  width: calc(100% / 2 - 30px);
+}
+
+@media screen and (min-width: 768px) {
+  .list-logos__item {
+    margin-right: 30px;
+    width: calc(100% / 3 - 30px);
+  }
+}
+
+@media screen and (min-width: 768px) and (min-width: 1200px) {
+  .list-logos__item .list-logos__item:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+.list-logos__icon {
+  fill: currentColor;
+}
+
+@media screen and (min-width: 768px) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  list-style: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0;
+}
+
+@media screen and (min-width: 1200px) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  padding: 0;
 }
 
 .list-logos__link {
@@ -959,28 +993,6 @@ a {
 .list-logos__link:hover, .list-logos__link:focus {
   color: #2196f3;
   border: 1px solid #2196f3;
-}
-
-.list-logos__item {
-  margin-right: 30px;
-  margin-bottom: 30px;
-  width: calc(100% / 2 - 30px);
-}
-
-@media screen and (min-width: 768px) {
-  .list-logos__item {
-    width: calc(100% / 3 - 30px);
-  }
-}
-
-@media screen and (min-width: 768px) and (min-width: 1200px) {
-  .list-logos__item .list-logos__item:not(:last-child) {
-    margin-right: 30px;
-  }
-}
-
-.list-logos__icon {
-  fill: currentColor;
 }
 
 .container-footer {
