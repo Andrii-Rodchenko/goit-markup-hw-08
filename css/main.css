@@ -447,11 +447,6 @@ a {
   margin: 0 10px;
 }
 
-.menu-container.is-open {
-  -webkit-transform: translateX(0);
-          transform: translateX(0);
-}
-
 .toggle__icon-close:hover,
 .toggle__icon-menu:hover {
   fill: #2196F3;
